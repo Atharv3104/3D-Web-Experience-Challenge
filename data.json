@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Cyber Nexus",
+      "subtitle": "Network Infrastructure",
+      "description": "A hub connecting local interactions. Utilizing raycasting for precise click detection to orchestrate actions securely via local protocols.",
+      "useCase": "Zero-trust network architectures, backend routing, horizontal scaling.",
+      "realWorldMeaning": "The backbone infrastructure of modern secure serverless networking.",
+      "assets": "/assets/models/nexus.glb",
+      "tech": ["API Gateway", "Load Balancers", "WebRTC"],
+      "color": "#20ff80",
+      "explainMode": "Think of this as a busy post office. It receives messages from one place, figures out the fastest and safest route, and delivers them.",
+      "advancedMode": "This demonstrates a mock microservice architecture. It handles HTTP request dispatching, socket latency optimization, and encrypted data chunking. In production, this mirrors the topology of modern VPCs and interconnected container deployments.",
+      "implementationSteps": [
+        "1. API Gateway Setup: Deploy a proxy (e.g. NGINX or Kong) to safely route incoming public traffic securely across internal microservices.",
+        "2. Event-Driven Messaging: Integrate Apache Kafka or RabbitMQ. When a node 'fires', it publishes an event. Routers intelligently consume and distribute these workloads asynchronously.",
+        "3. Edge Computing & Security: Implement JSON Web Token (JWT) validation at edge nodes (AWS Lambda Edge / Cloudflare Workers) to simulate zero-trust node-to-node security handshakes."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Neural Matrix",
+      "subtitle": "AI & Heuristics",
+      "description": "Simulating a lightweight neural map. This module allows guided narrative experiences through interconnected waypoints.",
+      "useCase": "Path prediction, recommendation engines, LLM attention maps.",
+      "realWorldMeaning": "Represents the human brain's synaptic network, translated into discrete algorithmic layers.",
+      "assets": "/assets/models/neural.glb",
+      "tech": ["PyTorch Models", "TensorFlow.js", "Weights & Biases"],
+      "color": "#2060ff",
+      "explainMode": "This is a digital brain. It takes in puzzle pieces (Input Layer), connects them inside its hidden layers (Thinking Layer), and builds the final picture automatically (Output Layer).",
+      "advancedMode": "A Deep Feed-Forward Network simulator mapping input vectors to multidimensional feature spaces. It utilizes gradient descent, backpropagation loops, and non-linear activation (ReLU) across its hidden state matrix.",
+      "implementationSteps": [
+        "1. Real-time Telemetry Pipeline: Establish an ingestion pipeline (e.g., Apache Airflow or Kafka Streams) to convert raw user interactions into normalized vector embeddings.",
+        "2. Model Architecture: Use PyTorch to construct Sequential Dense Layers targeting specific dimensionality reductions. Apply Activation functions to let the network map non-linear relationships.",
+        "3. High-Speed Inferencing: Containerize the trained model weights via Docker, and serve them via FastAPI or NVIDIA Triton Server to ensure predictions return in sub-20ms latency budgets."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Quantum Engine",
+      "subtitle": "Advanced Compute",
+      "description": "A high-performance calculation engine simulation operating through parallel processing layers to emulate complex physics.",
+      "useCase": "High-frequency trading, real-time climate simulation, cryptography.",
+      "realWorldMeaning": "Quantum computing superposition concepts applied directly to localized classical processing hardware.",
+      "assets": "/assets/models/quantum.glb",
+      "tech": ["WebGL", "WebGPU", "Qubit Logic"],
+      "color": "#ff2050",
+      "explainMode": "Imagine a computer that doesn't just guess 0 or 1, but guesses everyone's number at once. It processes billions of possibilities at the same exact time to find the absolute best answer instantly.",
+      "advancedMode": "Models advanced compute capabilities using probabilistic vectors. Simulating superposition states entails distributing computational loads simultaneously across thousands of client-side web workers or massive cloud HPC clusters.",
+      "implementationSteps": [
+        "1. Horizontal Parallel Provisioning: Utilize Kubernetes (K8s) to orchestrate scalable horizontal pods, mapping your physical cloud clustering to match dynamic computational load needs.",
+        "2. Hardware Acceleration: Write WebGPU or CUDA compute shaders instead of standard CPU threading. Offload math-intensive physics operations to GPU VRAM for true massive parallel alignment.",
+        "3. Probabilistic Architecture: Integrate Monte Carlo simulations running concurrently. Each thread computes a single branch of probability, mimicking a probabilistic waveform before collapsing into an actionable dataset answer."
+      ]
+    }
+  ]
+}
